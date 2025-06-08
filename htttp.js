@@ -5,6 +5,8 @@ const server = http.createServer((req, res) => {
     res.end(`
         <h1>Hello World</h1>
         <p>Welcome to my Node.js server!</p>
+        <p>Current Date and Time: ${new Date().toLocaleString()}</p>
+        <p>Request Method: ${req.method}</p>
         `);
 });
 
